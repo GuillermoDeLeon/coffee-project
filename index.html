@@ -33,8 +33,9 @@
     <br>
 
     <blockquote class="blockquote text-center">
-        <p class="mb-0">G & S Coffee!</p>
-        <cite title="Source Title">Best Coffee in Codeup</cite>
+        <p class="mb-0">G & S KAFA!</p>
+        <p class="mb-0">- CAFFEINE n CODING! -</p>
+        <cite title="Source Title">"I don't even drink coffee, not sure why I'm doing this review" - my friend, Larry!</cite>
     </blockquote>
 
     <form id="search-form">
@@ -47,18 +48,18 @@
     <!--    </select>-->
     <!--    here ends the code for roast selection/ select section-->
         <select class="custom-select" id="roast-selection">
-            <option>Light</option>
-            <option>Medium</option>
-            <option>Dark</option>
+            <option class="roast-selection-font">Light</option>
+            <option class="roast-selection-font">Medium</option>
+            <option class="roast-selection-font">Dark</option>
         </select>
 
-        <input id="submit" type="submit" />
+        <input class="submit-buttons" type="submit" />
     </form>
     <br>
     <form>
         <label for="coffee-input" id="coffee-label">SEARCH FOR KAFA</label>
         <br>
-        <input type="text" id="coffee-input" placeholder="Search for coffee">
+        <input type="text" id="coffee-input" placeholder="Search for coffee!" style="font-family: 'Anton';">
     </form>
 
 <!--    <div class="coffee-div">-->
@@ -70,9 +71,7 @@
 <!--            <div class="col p-0">-->
 <!--                <div class="container p-0 m-0">-->
 <!--                    <div class="row m-0 p-0">-->
-                        <div
-                                class="col m-1 p-5 d-flex flex-wrap justify-content-center"
-                                id="coffees">
+                        <div class="col m-1 p-5 d-flex flex-wrap justify-content-center" id="coffees">
                         </div>
 <!--                    </div>-->
 <!--                </div>-->
@@ -81,17 +80,17 @@
     </div>
 
     <!--Below is code to add new coffee-->
-    <div>
-        <label for="new-coffee">Add the new coffee to this list</label>
-        <input id="new-coffee" placeholder="Enter your new coffee here" type="text">
-        <label>What kind of Roast would you like?
+    <div id="add-coffee-div">
+        <label for="new-coffee" class="add-coffee">Add the new coffee to this list</label>
+        <input id="new-coffee" placeholder="Enter new coffee!" style="font-family: 'Anton';" type="text">
+        <label class="add-coffee">What kind of Roast would you like?
             <select id="new-roast">
                 <option>Light</option>
                 <option>Medium</option>
                 <option>Dark</option>
             </select>
         </label>
-        <input id="submitNewCoffee" type="submit">
+        <input id="submitNewCoffee" class="submit-buttons" type="submit">
     </div>
     <!--End of add new coffee-->
 

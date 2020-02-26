@@ -43,7 +43,19 @@ blockquote.blockquote.text.center.bg-primary {
 }
 
 .mb-0 {
+    margin-top: 3%;
+    padding: 20px;
+    font-size: 4em;
+}
+
+.mb-0:nth-child(2){
     font-size: 2em;
+}
+
+/*h3 stying is targeting coffees id div*/
+h3 {
+    padding: 0 14px;
+    font-family: 'Anton';
 }
 
 #coffeez2 {
@@ -68,19 +80,19 @@ p {
 
 @keyframes shifting-text {
     0% {
-        transform: translate3d(15px, 0, 0); color: #143d59;
+        transform: translate3d(15px, 0, 0); color: #6A2B05;
     }
     25% {
-        transform: translate3d(0, 0, 20px); color: #143d59;
+        transform: translate3d(0, 0, 20px); color: #3e1404;
     }
     50% {
-        transform: translate3d(0, 0, 20px); color: #856721;
+        transform: translate3d(0, 0, 20px); color: #6A2B05;
     }
     75% {
-        transform: translate3d(20, 0, 0); color: #856721;
+        transform: translate3d(25px, 0, 0); color: #3e1404;
     }
     100% {
-        transform: translate3d(15px, 0, 0); color: #143d59;
+        transform: translate3d(15px, 0, 0); color: #6A2B05;
     }
 }
 
@@ -89,44 +101,50 @@ cite {
     font-family: 'Press Start 2P';
 }
 
-#submit {
+.roast-selection-font {
+    font-family: 'Anton';
+}
+
+input#coffee-input {
+    margin-bottom: 20px;
+    margin-left: 7px;
+}
+
+.submit-buttons {
     padding: 25px;
     width: 100px;
     border-radius: 15px;
     margin-left: 43%;
     margin-top: 2%;
     font-family: 'Anton';
-
 }
 
-#submit:hover {
-    animation: submit-animation 3s;
+.submit-buttons:hover {
+    animation: submit-animation 1.25s ease-in;
     animation-iteration-count: 1;
-    transition: ease-in-out;
-    transition-delay: 5s;
 }
 
 @keyframes submit-animation {
     0% {
         color: white;
-        background: #143d59;
+        background: #e7b2a5;
         -webkit-box-shadow:0 0 3px #d2b6a0;
     }
     25% {
         color: white;
-        background: #143d59;
+        background: #f1935c;
         -webkit-box-shadow:0 0 3px #d2b6a0;
 
     }
     50% {
         color: white;
-        background: #856721;
+        background: #ba6b57;
         -webkit-box-shadow:2px 2px 0 #d9a479; animation-delay: 2s;
 
     }
     75% {
         color: #9e9e9e;
-        background: #856721;
+        background: #e7b2a5;
         -webkit-box-shadow:0 0 3px #d2b6a0;
 
     }
@@ -141,9 +159,27 @@ cite {
 
 #coffees {
     margin-left: 42%;
-    border: 2px solid maroon;
-
-
+    border: 2px solid transparent;
+    border-radius: 20px;
+    animation: coffee-list-background 15s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes coffee-list-background {
+    0% {
+        background: #e7b2a5; opacity: .70;
+    }
+    25% {
+        background: #f1935c; opacity: .70;
+    }
+    50% {
+        background: #ba6b57; opacity: .70;
+    }
+    75% {
+        background: #f1935c; opacity: .70;
+    }
+    100%{
+        background: #e7b2a5; opacity: .70;
+    }
 }
 
 
@@ -162,4 +198,16 @@ input#coffee-input {
     font-size: 1.75em;
     color: #fff;
     letter-spacing: 3px;
+}
+
+#add-coffee-div {
+    padding: 55px;
+}
+
+.add-coffee {
+    font-family: 'Anton';
+    font-size: 1.15em;
+    color: #fff;
+    margin-left: 7%;
+
 }
